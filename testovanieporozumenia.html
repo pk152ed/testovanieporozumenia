@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styling.css" />
+    <title>Testovanie porozumenia u detí v predškolskom veku</title>
+    <style></style>
+  </head>
+
+  <body>
+   <header>
+      <nav>
+      <p>Testovanie porozumenia u detí v predškolskom veku</p>
+      </nav>
+    </header>
+    <div id="results" style="display: none">
+      <table id="answerStats">
+        <tr>
+          <td>Správne odpovede:</td>
+          <td id="answerNumber">0</td>
+        </tr>
+        <tr>
+          <td>Nesprávne odpovede:</td>
+          <td id="answerIncorrect">0</td>
+        </tr>
+      </table>
+      <div class="buttonholder">
+        <button onclick="reset()" id="playbutton">Skúsiť znova</button>
+      </div>
+    </div>
+
+    <div id="holder">
+      <div id="questionText"></div>
+      <div id="detection"></div>
+      <div class="buttonholder">
+        <button onclick="start()" id="startButton">Začať s testovaním porozumenia</button>
+        <button
+          onclick="nextQuestion()"
+          id="nextQuestionButton"
+          style="display: none"
+        >
+          Ďalší zvuk
+        </button>
+      </div>
+      <footer></footer>
+    </div>
+    <script src="questions.js"></script>
+    <script src="question mechanism.js"></script>
+  </body>
+</html>
